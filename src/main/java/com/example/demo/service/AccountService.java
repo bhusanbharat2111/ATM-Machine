@@ -54,7 +54,7 @@ public class AccountService {
 		return (dAmount + " /- deposited successfully");
 	}
 
-	public String withdraw(Integer wAmount) {
+	public String withdraw(int wAmount) {
 		if (this.optionalAccount == null) {
 			return "Please verify your account first";
 		}
