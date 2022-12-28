@@ -22,7 +22,6 @@ public class AccountService {
 	public String validate(Login login) {
 		optionalAccount = accountDao.findById(login.getAccountNumber());
 		if (optionalAccount.isEmpty()) {
-			optionalAccount = null;
 			return "Entered wrong customer Id";
 		} else {
 			account = optionalAccount.get();
