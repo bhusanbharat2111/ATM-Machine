@@ -111,7 +111,6 @@ public class AccountService {
 	public String searchAccount(long cid) {
 		optionalAccount = accountDao.findById(cid);
 		if (optionalAccount.isEmpty()) {
-			optionalAccount = null;
 			return "Entered wrong customer Id";
 		}
 		return "Enter the four digit otp that is sent to your registered mobile number";
