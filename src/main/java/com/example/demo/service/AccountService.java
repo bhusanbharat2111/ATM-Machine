@@ -31,7 +31,6 @@ public class AccountService {
 			}
 		}
 		return AccountService.options();
-
 	}
 
 	public static String options() {
